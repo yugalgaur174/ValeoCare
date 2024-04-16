@@ -1,5 +1,6 @@
 import valeo from '../assets/valeo_logo.png';
 import './Home.css';
+import { Link } from "react-router-dom";
 
 function Home(){
     return(
@@ -9,7 +10,7 @@ function Home(){
             <ul className="sections">
                 <li><a href= " ">Home</a></li>
                 <li><a href= " ">Community Forum</a></li>
-                <li><a href= " ">Resources</a></li>
+                <li><Link to="/Resources"><a href= "">Resources</a></Link></li>
                 <li><a href= " ">About Us</a></li>
             </ul>
         </div>
