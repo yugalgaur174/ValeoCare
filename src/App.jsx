@@ -3,6 +3,10 @@ import Home from "./pages/Home.jsx";
 
 import Resources from "./pages/Resources.jsx"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import Home from "./pages/Home.jsx";
+import Forum from "./pages/Forum.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -10,8 +14,7 @@ function App() {
       <div>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route path="/forum" element={<Forum />} /> */}
-          <Route path="/Resources" element={<Resources/>} />
+          <Route path="/forum" element={<Forum />} />
         </Routes>
       </div>
     </Router>
